@@ -1,2 +1,18 @@
-a{background-color: chartreuse; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 18px; border: darkgoldenrod inset; border-radius: 10px 0px 10px 0px; text-decoration: none; padding: 0px;}
-a:hover{background-color: crimson; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px; border: rgb(11, 184, 54) inset; border-radius: 0px 10px 0px 10px; text-decoration: none; padding: 0px;}
+a{
+    background-color: chartreuse; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px; 
+    border: darkgoldenrod inset; 
+    border-radius: 10px 0px 10px 0px; 
+    text-decoration: none; 
+    padding: 0px;
+}
+a:hover{
+    background-color: crimson; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 25px; 
+    border: rgb(11, 184, 54) inset; 
+    border-radius: 0px 10px 0px 10px; 
+    text-decoration: none; 
+    padding: 0px;
+}
