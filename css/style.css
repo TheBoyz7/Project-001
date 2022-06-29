@@ -1,9 +1,7 @@
 a{
     background-color: chartreuse; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px; 
-    border: darkgoldenrod inset; 
-    border-radius: 10px 0px 10px 0px; 
+    font-size: 18px;
     text-decoration: none; 
     padding: 0px;
 }
