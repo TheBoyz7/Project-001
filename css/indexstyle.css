@@ -26,12 +26,12 @@ h1{
       margin: auto;
       width: 80%;
       border-radius: 10px; 
-      height: 60vh;
+      height: 85vh;
       display: flex;
 }
 #welcome{
-      background-image: url(../images/tbc.jpg);
-      background-size: 100% 100%;
+      background-image: url(../images/skysports-premier-league-fixtures_5653293.jpg);
+      background-size: cover;
       flex-basis: 69%;
       background-position-x: 50%;
       color: white;
@@ -71,6 +71,7 @@ h1{
       border-radius: 20px;
       margin-top: 40px;
       align-self: center;
+      cursor: pointer;
 }
 
 #create form{
@@ -106,8 +107,22 @@ h1{
       height: 34px;
       background-color: #01066C;
       border-radius: 20px;
-      margin-top: 40px;
+      margin-top: 20px;
       align-self: center;
+}
+
+@media(max-width: 720px) {
+      h2{
+            font-size: 29px;
+      }
+
+      .text-box h2{
+            font-size: 29px;
+      }
+
+      #create{
+            flex-basis: 65%;
+      }
 }
 
 .dot1{
