@@ -1,0 +1,83 @@
+#body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: whitesmoke;}
+#header{margin-left: 46%;
+        font-weight: bolder; 
+        font-size: 20px;}
+#entire{background-color: brown; 
+        margin-top: 7px;
+        margin-left: 13%;
+        box-shadow: 3px 6px #8888;
+        width: 74%;
+        border-radius: 10px;
+        position: absolute; 
+        height:700px;}
+#welcome{background-color: orangered;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position-x: 50%;
+         position: absolute;
+         color: white;
+         border-radius: 10px 0px 0px 10px ;
+         width: 50%;
+         height: 700px;}
+#create{background-color: black;
+        color: white;
+        position: absolute;
+        width: 50%;
+        border-radius:0px 10px 10px 0px ;
+        margin-left: 50%;
+        height: 700px;}
+#wel{ font-size: 40px;
+      letter-spacing: 3px;
+      word-spacing: 18px;
+      text-align: center;}
+#to{ letter-spacing: 3px;
+    word-spacing: 6px;
+    text-align:center;}
+#with{ letter-spacing: 3px;
+    text-align: center;}
+#but1{border: 2px solid white;
+      width: 34%;
+      color: white;
+      font-weight: bold; 
+      height: 34px;
+      background-color: #01066C;
+      border-radius: 20px;
+      margin-left: 32%;}
+#cre{ font-size: 40px;
+    letter-spacing: 3px;
+    word-spacing: 18px;
+    text-align: center;}
+#or{text-align: center;}
+#name{margin-left: 25%;
+      height: 35px;
+      background-color: whitesmoke;
+      border: none;
+      width: 50%;}
+.dot1{height: 50px;
+      position: absolute;
+      background-color: whitesmoke; 
+      border-radius: 50px;
+      margin-top: -55px;
+      margin-left: 200px;
+      border: 1px solid grey;
+      box-shadow: 1px 2px gray;
+      width: 50px;}
+.dot2{height: 50px;
+      position: absolute;
+      background-color: whitesmoke; 
+      border-radius: 50px;
+      margin-top: -55px;
+      margin-left: 270px;
+      box-shadow: 1px 2px grey;
+      border: 1px solid grey;
+      width: 50px;}
+.dot3{height: 50px;
+      position: absolute;
+      background-color: whitesmoke; 
+      border-radius: 50px;
+      box-shadow: 1px 2px grey;
+      border: 1px solid grey;
+      margin-top: -55px;
+      margin-left: 340px;
+      width: 50px;}

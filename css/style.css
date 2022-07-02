@@ -1,16 +1,14 @@
 a{
-    background-color: chartreuse; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    text-decoration: none; 
+    text-decoration: solid;
     padding: 0px;
 }
 a:hover{
-    background-color: crimson; 
+    background-color:#01066C; 
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    font-size: 25px; 
-    border: rgb(11, 184, 54) inset; 
-    border-radius: 0px 10px 0px 10px; 
+    font-size: 19px; 
     text-decoration: none; 
     padding: 0px;
+    font-stretch: semi-expanded;
 }
