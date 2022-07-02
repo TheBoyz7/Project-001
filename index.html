@@ -52,14 +52,14 @@
             <span class="dot3"></span>
         <p id="or">or use your email for registration</p>
         <br>
-       <form action="dashboard.html" method="post">
-        <input type="text" placeholder="Name" id="name" autofocus required>
+       <form action="dashboard.html"  method="post" id="signup">
+        <input type="text" placeholder="Username" id="name" autocomplete="name" autofocus required>
         <br>
         <br>
-        <input type="email" placeholder="Email" id="name" required>
+        <input type="email" placeholder="Email" id="name" autocomplete="username email" required>
         <br>
         <br>
-        <input type="password" placeholder="password" id="name" required>
+        <input type="password" placeholder="password" id="name" autocomplete="new-password" required>
         <br>
         <br>
             <input type="submit" value="SIGN UP" id="but1" required>
@@ -67,12 +67,53 @@
         </div>
     </div>
 
+<!-- Scripts -->
+
+      <!-- signup scripts -->
+<!-- <script>
+         var f= document.querySelector('#signup');
+         f.addEventListener('submit', e =>{e.preventDefault()})
+
+    fetch('/signin', {
+        method:'POST',
+        body: new FormData(e.target),
+        credentials:'include'
+    })
+     .then((res) => {
+        if(res.status== 200) {
+            return Promise.resolve()
+        }else{
+            return Promise.reject('Sign-in faild');
+        }
+     })
+    .then((profile) => {
+        if(window.PasswordCredential) {
+            var c = new PasswordCredential(e.target);
+           return navigator.credentials.store(c);
+     } else {
+        return Promise.resolve(profile)
+     }
+    })
+    .then((profile) =>{
+        if(profile){
+            updateUI(profile);
+        }
+    }) 
+    .catch((error) =>{
+        showError ('Sign-in Failed');
+    }) -->
+</script>
 
 
+
+
+<!-- Preloader Scripts -->
     <script>
         var loader= document.getElementById("preloader")
         window.addEventListener("load", function(){loader.style.display="none";})
         alert("Click okay if you want to be one of the boys")
+
+   
    
    </script>
 
