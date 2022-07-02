@@ -7,12 +7,16 @@
 body{
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       background-color: whitesmoke;
+      height: 130vh;
+      background-color: #01066C;
 }
 h1{
       text-align: center;
       font-weight: bolder; 
-      font-size: 30px;
+      font-size: 50px;
+      color: white;
       padding: 20px 20px;
+      margin-bottom: 30px;
 }
 #entire{
       margin-top: 7px;
@@ -22,13 +26,13 @@ h1{
       margin: auto;
       width: 80%;
       border-radius: 10px; 
-      height: 90vh;
+      height: 60vh;
       display: flex;
 }
 #welcome{
       background-image: url(../images/tbc.jpg);
-      background-size: cover;
-      flex-basis: 60%;
+      background-size: 100% 100%;
+      flex-basis: 69%;
       background-position-x: 50%;
       color: white;
       border-radius: 10px 0 0 10px ;
@@ -40,6 +44,7 @@ h1{
       border-radius:0px 10px 10px 0px ;
       color: white;
       width: 100%;
+      flex-basis: 50%;
 }
 
 .text-box{
@@ -55,7 +60,7 @@ h1{
       padding-bottom: 5px;
 }
 
-#but1{
+.btn{
       border: 1px solid white;
       width: 90px;
       padding: auto;
@@ -64,24 +69,47 @@ h1{
       height: 34px;
       background-color: #01066C;
       border-radius: 20px;
-      margin-top: 20px;
+      margin-top: 40px;
       align-self: center;
 }
-#cre{
-      font-size: 40px;
-      letter-spacing: 3px;
-      word-spacing: 18px;
-      text-align: center;}
-#or{
+
+#create form{
+      font-size: 30px;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
       text-align: center;
 }
-#name{
-      margin-left: 25%;
-      height: 35px;
-      background-color: whitesmoke;
-      border: none;
-      width: 50%;
+
+#create form h2{
+      margin-bottom: 15px;
 }
+
+#create form input{
+      background-color: #f5f5f5;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: none;
+      outline: none;
+}
+
+
+#create form input[type= submit]{
+      border: 1px solid white;
+      width: 90px;
+      padding: auto;
+      color: white;
+      font-weight: bold; 
+      height: 34px;
+      background-color: #01066C;
+      border-radius: 20px;
+      margin-top: 40px;
+      align-self: center;
+}
+
 .dot1{
       height: 50px;
       position: absolute;
