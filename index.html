@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
     <title>The Prem Bros</title>
     <link rel="stylesheet" href="css/indexstyle.css">
     <link rel="stylesheet" href="css/loader.css">
@@ -13,32 +12,22 @@
     ">
 
 </head>
-<body id="body">
+<body>
     <!-- PRELOADER -->
 <div id="preloader">
     <div class="loader_line"></div>
 </div>
 <!-- /PRELOADER -->
-        <p id="header">Sign In/up Form</p>
+        <h1 id="header">Sign In/up Form</h1>
     <div id="entire">
-        <div id="welcome" style=" background-image: url('images/tbc.jpg')">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <p id="wel"><b>Welcome Back!</b></p>
-            <p id="to">To keep connected with us please login</p>
-            <p id="with">with your personal info</p>
-            <br>
-            <br>
-            <input type="button" value="SIGN IN" id="but1">
+        <div id="welcome">
+            <div class="text-box">
+                <h2>Welcome Back</h2>
+                <p id="to">To keep connected with us <br>Please login
+                with your personal info</p>
+                <input type="button" value="SIGN IN" id="but1">
+            </div>
+            
         </div>
         <div id="create">
             <br>
@@ -48,9 +37,9 @@
             <br>
             <p id="cre"><b>Create Account</b></p>
             <br>
-            <span class="dot1"></span>
+            <!-- <span class="dot1"></span>
             <span class="dot2"></span>
-            <span class="dot3"></span>
+            <span class="dot3"></span> -->
         <p id="or">or use your email for registration</p>
         <br>
        <form type="post">
@@ -73,7 +62,7 @@
     <script>
         var loader= document.getElementById("preloader")
         window.addEventListener("load", function(){loader.style.display="none";})
-        alert("Click okay if you want to be one of the boys")
+        //alert("Click okay if you want to be one of the boys");
    
    </script>
 
