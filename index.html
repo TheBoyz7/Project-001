@@ -4,43 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <title>The Prem Bros</title>
+    <link rel="stylesheet" href="css/indexstyle.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css
+    ">
+
 </head>
-<body style="background-image: url(images/pl_bg.png); background-repeat: no-repeat; background-size: cover
-;">
-    <table style="width: 800px; height: 700px;" align="center" cellpadding="0" cellspacing="0" border="2px">
-        <tr>
-            <td colspan="4" style="width: 800px; height: 100px; color: rgb(100, 237, 146); background-color: lavenderblush;"><marquee behavior="" direction=""><h1>WELCOME TO MY <em>DASHBOARD</em>  
-            </h1></marquee><br>
-             <a href="man_utd.html">Man Utd</a>
-             <a href="chelsea.html">Chelsea</a> 
-             <a href="arsenal.html">Arsenal</a>
-             <a href="mancity.html">Man City</a>
-             <a href="Spurs.html">Spurs</a>
-             <a href="liverpool.html">Liverpool</a>
-             <a href="table.html">Dashboard</a></td>
-        </tr>
-        <tr>
-            <td rowspan="2" colspan="2" style="width: 400px; height: 300px; color: rgb(22, 20, 20); background-color: rgb(15, 24, 54);; font-size: larger; align-items: center;" >
-                <img src="images/icon.png" alt=""; width="300px" height="200px" >
-                <br>
-            <a href="your account.html">Your Account</a>
-            </td>
-            <td colspan="2" style="width: 400px; width: 400px; height: 150px; color: rgb(240, 240, 234); background-color: rgb(15, 24, 54);;"> 
-                <a href="mancity.html"><img src="images/city.png" alt=""; width="180px" height="90px" ></a> LEAGUE CHAMPIONS
-                <br> The City of Manchester, containing Manchester City and Manchester united have now won more Premier league titles than every other city combined </td>
-        </tr>
-        <tr>
-            <td colspan="2" style="width: 400px; height: 150px; color: rgb(23, 21, 24); background-color: crimson; font-size: large;"><a href="facts.html">Random Facts</a></td>
-        </tr>
-        <tr>
-            <td style="height: 300px; width: 200px; background-color: crimson"><a href="scorers.html">Top Scorers</a></td>
-            <td style="height: 300px; width: 200px; background-color: rgb(15, 24, 54); font-size: smaller;"><a href="fpl.html">Fantasy Premier League</a></td>
-            <td style="height: 300px; width: 200px; background-color: crimson;"><a href="assist.html">Assist Ranking</a></td>
-            <td style="height: 300px; width: 200px; background-color: rgb(15, 24, 54);"><a href="sheet.html">Cleen Sheet ranking</a></td>
-        </tr>
-    </table>
+<body id="body">
+    <!-- PRELOADER -->
+<div id="preloader">
+    <div class="loader_line"></div>
+</div>
+<!-- /PRELOADER -->
+        <p id="header">Sign In/up Form</p>
+    <div id="entire">
+        <div id="welcome" style=" background-image: url('images/tbc.jpg')">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p id="wel"><b>Welcome Back!</b></p>
+            <p id="to">To keep connected with us please login</p>
+            <p id="with">with your personal info</p>
+            <br>
+            <br>
+            <input type="button" value="SIGN IN" id="but1">
+        </div>
+        <div id="create">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p id="cre"><b>Create Account</b></p>
+            <br>
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        <p id="or">or use your email for registration</p>
+        <br>
+       <form type="post">
+        <input type="text" placeholder="Name" id="name" required>
+        <br>
+        <br>
+        <input type="email" placeholder="Email" id="name" required>
+        <br>
+        <br>
+        <input type="password" placeholder="password" id="name" required>
+        <br>
+        <br>
+        <input type="submit" value="SIGN UP" id="but1" required>
+       </form>
+        </div>
+    </div>
+
+
+
+    <script>
+        var loader= document.getElementById("preloader")
+        window.addEventListener("load", function(){loader.style.display="none";})
+        alert("Click okay if you want to be one of the boys")
+   
+   </script>
+
+
+
+
 </body>
 </html>
