@@ -1,3 +1,17 @@
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-decoration: solid;
+    padding: 0px;
+}
+a:hover{
+    background-color:#CA3640; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 19px; 
+    text-decoration: none; 
+    padding: 0px;
+    font-stretch: semi-expanded;
+}
 #main{ width: 100%;
     height: 750px;
     font-style: initial; 
@@ -10,9 +24,8 @@
     background-color: #EF0107; 
     height: 150px;
 }
-#buttom{ 
+.slideshow{ 
     width: 100%;
-    height: 600px;
+    height: 400px;
     background-color: white;
-    background-position-y: -170px;
 }
