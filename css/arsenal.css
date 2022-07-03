@@ -1,47 +1,124 @@
-a{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    text-decoration: solid;
-    padding: 0px;
-}
-a:hover{
-    background-color:#CA3640; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    font-size: 19px; 
-    text-decoration: none; 
-    padding: 0px;
-    font-stretch: semi-expanded;
-}
-#main{ width: 100%;
-    height: 750px;
-    font-style: initial; 
-    font-family: Cambria, 
-    Cochin, Georgia, Times, 'Times New Roman', serif; 
-    background-color: whitesmoke; 
-    font-size: 44px;
-    }
-#top{width: 100%;
-    background-color: #EF0107; 
-    height: 150px;
-}
 * {
     box-sizing: border-box;
-  }
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 3%;
+  background-color: #db0007;
+}
+
+nav .nav-links{
+  text-align: right;
+}
+
+nav .nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  padding: 8px 12px;
+}
+
+nav .nav-links ul li a{
+  text-decoration: none;
+  color: #1c2c5b;
+  font-size: 13px;
+  transition: 0.5s;
+}
+
+nav .nav-links ul li a:hover{
+  font-size: 15px;
+  background: none;
+}
+
+.img img{
+  height: 30px;
+  width: 40px;
+}
   
+nav .fa{
+  display: none;
+}
+
+@media(max-width: 720px){
+  .row{
+      flex-direction: column;
+  }
+
+  nav .nav-links ul li{
+      display: block;
+      padding: 10px 20px;
+      margin-right: 20px;
+  }
+
+  .nav-links{
+      position: fixed;
+      background-color: #db0007;
+      top: 0;
+      height: 100vh;
+      width: 200px;
+      right: -200px;
+      text-align: center;
+      z-index: 99;
+      transition: 1s;
+  }
+
+  nav .fa{
+      display: block;
+      color: #063672;
+      margin: 5px;
+      padding: 10px;
+      cursor: pointer;
+  }
+
+
+}
+
+
+/* footer */
+
+footer{
+  background-color: #db0007;
+  text-align: center;
+  padding: 15px 0;
+  color: white;
+}
+
+footer h3{
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.icons{
+  padding: 20px 0;
+  color: #063672;
+  cursor: pointer;
+}
+
+.icons .fa{
+  padding: 0 12px;
+}
+
+
   /* Position the image container (needed to position the left and right arrows) */
   .container {
     position: relative;
-  }
+}
   
   /* Hide the images by default */
   .mySlides {
     display: none;
-  }
+}
   
   /* Add a pointer when hovering over the thumbnail images */
   .cursor {
     cursor: pointer;
-  }
+}
   
   /* Next & previous buttons */
   .prev,

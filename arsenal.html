@@ -7,20 +7,31 @@
     <title>Arsenal</title>
     <link rel="shortcut icon" href="images/arsenal.png" type="image/x-icon">
     <link rel="stylesheet" href="css/arsenal.css">
+    <link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
-<body style="background-image: url(images/nouclstadium.jpeg); background-repeat: no-repeat; background-size: cover;">
-   <div id="main">
-      <div id="top">
-        <p>GUNNERS</p> 
-        <a href="man_utd.html">Man Utd</a>
-        <a href="chelsea.html">Chelsea</a> 
-        <a href="arsenal.html">Arsenal</a>
-        <a href="mancity.html">Man City</a>
-        <a href="Spurs.html">Spurs</a>
-        <a href="liverpool.html">Liverpool</a>
-        <a href="westham.html">Westham</a>
-        <a href="dashboard.html">Dashboard</a>
-      </div>
+<body>
+  <header>
+    <nav>
+        <div class="img">
+            <img src="./images/arsenal.png" alt="">
+        </div>
+        <div class="nav-links" id="nav">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="man_utd.html">MAN UTD</a></li>
+                <li><a href="chelsea.html">CHELSEA</a></li>
+                <li><a href="arsenal.html">ARSENAL</a></li>
+                <li><a href="mancity.html">MAN CITY</a></li>
+                <li><a href="Spurs.html">SPURS</a></li>
+                <li><a href="liverpool.html">LIVERPOOL</a></li>
+                <li><a href="westham.html">WESTHAM</a></li>
+                <li><a href="dashboard.html">DASHBOARD</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+   </header>
+   
       <!-- Container for the image gallery -->
 <div class="container">
 
@@ -71,44 +82,66 @@
    </div>
  </div>
    </div>
+    <footer>
+    <h3>About us</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. olore dolorum similique quam, <br> distinctio aut dolorem quasi alias aspernatur quod soluta. Sit quos quod pariatur id nulla neque, dignissimos consectetur.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
 
 
 
 
 
-   <script>
-      let slideIndex = 1;
+    
+</body>
+
+<script>
+  //for menu slide
+  var navLinks = document.getElementById("nav")
+
+  function showMenu(){
+  navLinks.style.right = "0"
+  }
+  
+  function hideMenu(){
+  navLinks.style.right = "-200px"
+  }
+////end of code for menu slide
+
+
+    let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("demo");
+let captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
 }
-   </script>
-    
-    
-</body>
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
 </html>
