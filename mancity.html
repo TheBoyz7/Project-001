@@ -7,19 +7,66 @@
     <title>Man City</title>
     <link rel="shortcut icon" href="images/city.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
+   
 </head>
-<body style="background-image: url(images/nofansstadium.jpeg); background-repeat: no-repeat; background-size: cover;">
-    <p style="font-style: initial; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background-color: rgb(27, 188, 216); font-size: 44px;">BLUE MOON</p>
-    <br>
-    <br>
-    <a href="man_utd.html">Man Utd</a>
-    <a href="chelsea.html">Chelsea</a> 
-    <a href="arsenal.html">Arsenal</a>
-    <a href="mancity.html">Man City</a>
-    <a href="Spurs.html">Spurs</a>
-    <a href="liverpool.html">Liverpool</a>
-    <a href="westham.html">Westham</a>
-    <a href="dashboard.html">Dashboard</a>
-    
+<body>
+   <header>
+    <nav>
+        <div class="img">
+            <img src="./images/city.png" alt="">
+        </div>
+        <div class="nav-links" id="nav">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="man_utd.html">MAN UTD</a></li>
+                <li><a href="chelsea.html">CHELSEA</a></li>
+                <li><a href="arsenal.html">ARSENAL</a></li>
+                <li><a href="mancity.html">MAN CITY</a></li>
+                <li><a href="Spurs.html">SPURS</a></li>
+                <li><a href="liverpool.html">LIVERPOOL</a></li>
+                <li><a href="westham.html">WESTHAM</a></li>
+                <li><a href="dashboard.html">DASHBOARD</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+   </header>
+   <section class="features">
+    <h1>Available Offers</h1>
+    <div class="row">
+        <div class="features-col">
+            <img src="./images/city.png" alt="">
+        </div>
+        <div class="features-col">
+            <img src="./images/city.png" alt="">
+        </div>
+        <div class="features-col">
+            <img src="./images/city.png" alt="">
+        </div>
+    </div>
+   </section>
+
+   <footer>
+    <h3>About us</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. olore dolorum similique quam, <br> distinctio aut dolorem quasi alias aspernatur quod soluta. Sit quos quod pariatur id nulla neque, dignissimos consectetur.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+   </footer>
+
 </body>
+<script>
+    var navLinks = document.getElementById("nav")
+
+function showMenu(){
+navLinks.style.right = "0"
+}
+
+function hideMenu(){
+navLinks.style.right = "-200px"
+}
+</script>
 </html>
