@@ -79,6 +79,31 @@ nav .fa{
 }
 
 
+.features{
+  width: 80%;
+  padding-top: 80px;
+  margin: auto;
+  text-align: center; 
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  flex-wrap: wrap;
+}
+
+.features-col img{
+  width: 180px;
+}
+
+.features-col{
+  flex-basis: 29%;
+  padding: 20px 12px;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+}
+
 /* footer */
 
 footer{
@@ -189,3 +214,8 @@ footer h3{
   .demo:hover {
     opacity: 1;
   }
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
