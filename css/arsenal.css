@@ -112,3 +112,129 @@ a:hover{
   .demo:hover {
     opacity: 1;
   }
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 3%;
+    background-color: #6cabdd;
+}
+
+nav .nav-links{
+    text-align: right;
+}
+
+nav .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+}
+
+nav .nav-links ul li a{
+    text-decoration: none;
+    color: #1c2c5b;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+nav .nav-links ul li a:hover{
+    font-size: 15px;
+    background: none;
+}
+
+.img img{
+    height: 30px;
+    width: 40px;
+}
+
+.features{
+    width: 80%;
+    padding-top: 80px;
+    margin: auto;
+    text-align: center; 
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.features-col img{
+    width: 300px;
+}
+
+.features-col{
+    flex-basis: 29%;
+    padding: 20px 12px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 720px){
+    .row{
+        flex-direction: column;
+    }
+
+    nav .nav-links ul li{
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .nav-links{
+        position: fixed;
+        background-color: #6cabdd;
+        top: 0;
+        height: 100vh;
+        width: 200px;
+        right: -200px;
+        text-align: left;
+        z-index: 99;
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color: #1c2c5b;
+        margin: 5px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+
+}
+
+
+footer{
+    background-color: #EF0107;
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+}
+
+footer h3{
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-weight: 700;
+}
+
+.icons{
+    padding: 20px 0;
+    color: #1c2c5b;
+    cursor: pointer;
+}
+
+.icons .fa{
+    padding: 0 12px;
+}
