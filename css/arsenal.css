@@ -75,7 +75,6 @@ nav .fa{
       cursor: pointer;
   }
 
-
 }
 
 
@@ -139,6 +138,12 @@ footer h3{
   .mySlides {
     display: none;
 }
+
+/* images width */
+
+.mySlides img{
+  width: 100%;
+}
   
   /* Add a pointer when hovering over the thumbnail images */
   .cursor {
@@ -199,10 +204,32 @@ footer h3{
     clear: both;
   }
   
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 25%;
+  /* Four columns side by side */
+  .thumbnail{
+    width: 80%;
+   margin: auto;
+    padding-top: 40px;
+  }
+  .column img{
+    width: 100%;
+    border-radius: 10px;
+    height: 150px;
+  }
+
+  .thumb{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+   /* media query to put 4th pic in center */
+
+   @media(min-width: 603px) and (max-width:808px){
+    .thumb .col{
+        grid-column: 2/3;
+        
+      }
   }
   
   /* Add a transparency effect for thumnbail images */
