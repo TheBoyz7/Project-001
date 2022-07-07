@@ -4,22 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spurs</title>
+    <title>Tottenham</title>
     <link rel="shortcut icon" href="images/spurs.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/spurs.css">
+    <link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
-<body style="background-image: url(images/ts-stadium.jpeg); background-repeat: no-repeat; background-size: cover;">
-    <p style="font-style: initial; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background-color: rgb(252, 249, 249); font-size: 44px;">TO DARE IS TO DO </p>
-    <br>
-    <br>
-<a href="man_utd.html">Man Utd</a>
-    <a href="chelsea.html">Chelsea</a> 
-    <a href="arsenal.html">Arsenal</a>
-    <a href="mancity.html">Man City</a>
-    <a href="Spurs.html">Spurs</a>
-    <a href="liverpool.html">Liverpool</a>
-    <a href="westham.html">Westham</a>
-    <a href="dashboard.html">Dashboard</a>    
+<body>
+  <header>
+    <nav>
+        <div class="img">
+            <img src="./images/spurs.png" alt="">
+        </div>
+        <div class="nav-links" id="nav">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="man_utd.html">MAN UTD</a></li>
+                <li><a href="chelsea.html">CHELSEA</a></li>
+                <li><a href="arsenal.html">ARSENAL</a></li>
+                <li><a href="mancity.html">MAN CITY</a></li>
+                <li><a href="Spurs.html">SPURS</a></li>
+                <li><a href="liverpool.html">LIVERPOOL</a></li>
+                <li><a href="westham.html">WESTHAM</a></li>
+                <li><a href="dashboard.html">DASHBOARD</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+   </header>
+   
+      <!-- Container for the image gallery -->
+<div class="container">
+   <!-- Full-width images with number text -->
+   <div class="mySlides">
+     <div class="numbertext">1 / 4</div>
+       <img src="images/hart lane stadium (1).jpg" >
+   </div>
+ 
+   <div class="mySlides">
+     <div class="numbertext">2 / 4</div>
+       <img src="images/spursball.jpg" >
+   </div>
+ 
+   <div class="mySlides">
+     <div class="numbertext">3 / 4</div>
+       <img src="images/spursreomero.jpg" >
+   </div>
+ 
+   <div class="mySlides">
+     <div class="numbertext">4 / 4</div>
+       <img src="images/whiteHartlanetext.jpg" >
+   </div>
+ 
+   <!-- Next and previous buttons -->
+   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ 
+   <!-- Image text -->
+   <div class="caption-container">
+     <p id="caption"></p>
+   </div>
+ 
+   <!-- Thumbnail images -->
+    <section class="thumbnail">
+      <div class="thumb">
+      <div class="column">
+        <img class="demo cursor" src="images/hart lane stadium (1).jpg"  onclick="currentSlide(1)" alt="Our Fortress">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/ts-stadium (1).jpeg"  onclick="currentSlide(2)" alt="Stay Proud">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/spursreomero.jpg"  onclick="currentSlide(3)" alt="The Golden Boy">
+      </div>
+      <div class="column col">
+        <img class="demo cursor" src="images/spursball.jpg"  onclick="currentSlide(4)" alt="Our Legend">
+      </div>
+    </div>
+    </section>
+
+  <section class="features">
+   <h1>Available Offers</h1>
+   <div class="row">
+       <div class="features-col">
+           <img src="./images/spurs.png" alt="">
+       </div>
+       <div class="features-col">
+           <img src="./images/spurs.png" alt="">
+       </div>
+       <div class="features-col">
+           <img src="./images/spurs.png" alt="">
+       </div>
+   </div>
+  </section>
+
+  <footer>
+   <h3>About us</h3>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. olore dolorum similique quam, <br> distinctio aut dolorem quasi alias aspernatur quod soluta. Sit quos quod pariatur id nulla neque, dignissimos consectetur.</p>
+   <div class="icons">
+       <i class="fa fa-facebook"></i>
+       <i class="fa fa-instagram"></i>
+       <i class="fa fa-twitter"></i>
+   </div>
+  </footer>
+
+
+
+
+
+    
+</body>
+
+<script>
+  //for menu slide
+  var navLinks = document.getElementById("nav")
+
+  function showMenu(){
+  navLinks.style.right = "0"
+  }
+  
+  function hideMenu(){
+  navLinks.style.right = "-200px"
+  }
+////end of code for menu slide
+
+
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("demo");
+let captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+
     
 </body>
 </html>
