@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chelsea</title>
     <link rel="shortcut icon" href="images/chelsea.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/chelsea.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/chelsea.css">
 </head>
 <body>
     <header>
@@ -68,16 +68,16 @@
        <section class="thumbnail">
         <div class="thumb">
             <div class="column">
-              <img class="demo cursor" src="images/chels_boot.webp" onclick="currentSlide(1)" alt="Our Fortress">
+              <img class="demo cursor" src="images/chelsea_stadium.jpg" onclick="currentSlide(1)" alt="Our Fortress">
             </div>
             <div class="column">
-              <img class="demo cursor" src="images/chels_flag.webp" onclick="currentSlide(2)" alt="Stay Proud">
+              <img class="demo cursor" src="images/The_chels_stadium.jpg" onclick="currentSlide(2)" alt="Welcome Home">
             </div>
             <div class="column">
-              <img class="demo cursor" src="images/chelsea_stadium.jpg" onclick="currentSlide(3)" alt="The Golden Boy">
+              <img class="demo cursor" src="images/fernando-torres-chelsea.jpg" onclick="currentSlide(3)" alt="One of Our Own">
             </div>
             <div class="column col">
-              <img class="demo cursor" src="images/The_chels_stadium.jpg" onclick="currentSlide(4)" alt="Our Legend">
+              <img class="demo cursor" src="images/chels_flag.webp" onclick="currentSlide(4)" alt="These Colours Fly">
             </div>
           </div>
         </div>
@@ -162,6 +162,7 @@
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
     }
+    setInterval(showSlides,2000)
     
     </script>
 </body>
