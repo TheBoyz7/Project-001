@@ -13,6 +13,10 @@ nav{
   background-color: #132257;
 }
 
+h1{
+    color: white;
+}
+
 nav .nav-links{
   text-align: right;
 }
@@ -30,6 +34,7 @@ nav .nav-links ul li a{
   font-size: 13px;
   transition: 0.5s;
 }
+
 
 nav .nav-links ul li a:hover{
   font-size: 15px;
