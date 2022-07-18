@@ -109,8 +109,8 @@ nav .nav-links{
     margin-bottom: 10px;
 }
 
-.text-box a{
-    background-color:darkslategrey;
+.text-box button{
+    background-color:#132257;
     width: 50%;
     height: 30px;
     border: black 1px solid;
