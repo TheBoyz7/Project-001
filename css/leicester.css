@@ -9,7 +9,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   padding: 1% 3%;
-  background-color: #000;
+  background-color: #0053A0;
 }
 
 nav .nav-links{
@@ -57,7 +57,7 @@ nav .fa{
 
   .nav-links{
       position: fixed;
-      background-color: #C8090E;
+      background-color: #0053A0;
       top: 0;
       height: 100vh;
       width: 200px;
@@ -109,7 +109,7 @@ nav .fa{
 /* footer */
 
 footer{
-  background-color: #C8090E;
+  background-color: #0053A0;
   text-align: center;
   padding: 15px 0;
   color: white;
