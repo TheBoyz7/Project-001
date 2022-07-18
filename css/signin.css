@@ -6,3 +6,37 @@ a{color: #01066C;text-decoration: none;}
 #l{border-color: white; background-color: #01066C; color: white; width: 360px; height: 50px; border-radius: 30px; margin-left: 20px; }
 #c{ color: #01066C; width: 360px; height: 50px; border-radius: 30px; margin-left: 20px;}
 body{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: #01066C; background-image: url(../images/tbc.jpg); background-size: cover;}
+@media(max-width: 720px) {
+    #create form h2{
+          font-size: 25px;
+          text-align: center;
+          margin-left: 0;
+    }
+
+
+    #entire{
+          height: 90vh;
+          flex-direction: column;
+          margin-top: 10px;
+    }
+    h1{
+          font-size: 29px;
+          margin-bottom: 50px;
+    }
+}
+
+@media(min-width: 1500px){
+    
+    #create form input{
+          width: 95%;
+    }
+}
+
+@media(min-width: 1000px){
+    header{
+          height: 57vh;
+    }
+
+    header h1{
+          font-size: 65px;
+    }

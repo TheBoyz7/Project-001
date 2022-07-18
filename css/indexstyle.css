@@ -56,6 +56,11 @@ section{
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
       flex-basis: 70%;
 }
+#text{
+      color: white;
+      position: absolute;
+      margin-top: 30%;
+}
 
 
 #create form{
@@ -109,6 +114,12 @@ section{
             text-align: center;
             margin-left: 0;
       }
+      #create p{
+            font-size: 25px;
+            text-align: center;
+            margin-left: 0;
+      }
+
 
 
       #entire{
