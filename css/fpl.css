@@ -16,8 +16,13 @@ nav{
     padding-top: 20px;
 }
 
+nav .nav-links{
+    text-align: right;
+}
+
 .nav-links ul li{
     display: inline;
+    list-style: none;
     margin: 20px;
     list-style: none;
 }
@@ -27,7 +32,7 @@ nav{
     color: white;
 }
 
-.Dropdwn{
+/* .Dropdwn{
     position: relative;
 }
 
@@ -40,7 +45,7 @@ nav{
 .Dropdwn:hover, .Dropdwn ul li:hover{
     display: block;
     z-index: 44;
-}
+} */
 
 /* test */
 
@@ -63,7 +68,7 @@ nav{
   }
   
   .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #242833;
   }
   
   .dropdown:hover .dropdown-content {
@@ -94,22 +99,25 @@ nav{
     font-size: 64px;
 }
 
+ nav .fa{
+    display: none;
+}
+
 .text-box p{
     font-size: 22px;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .text-box button{
     background-color:#132257;
     width: 50%;
     height: 30px;
-}
-
-.text-box button a{
+    border: black 1px solid;
     text-decoration: none;
     color: white;
+    padding: 8px 24px;
 }
-
 
 @media(max-width: 720px){
     .row{
@@ -124,7 +132,7 @@ nav{
   
     .nav-links{
         position: fixed;
-        background-color: #c8102e;
+        background-color: #242833;
         top: 0;
         height: 100vh;
         width: 200px;
