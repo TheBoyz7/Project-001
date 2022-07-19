@@ -36,11 +36,29 @@
                     <span class="dot2"></span>
                     <span class="dot3"></span> -->
                     <form action="dashboard.html" method="post" >
+                        <?php 
+                        include("dbcon.php");
+                        error_reporting(E_ALL);
+                        if(isset($_REQUEST['submit'])){
+                            $name=$_REQUEST['name'];
+                            $email=$_REQUEST['email'];
+                            $password=$_REQUEST['password'];
+
+                            $sql="INSERT INTO table001(name, email, password) VALUE('$name','$email','$password')";
+                            mysqli_query($conn,$sql)or die(mysqli_error($conn));
+                            $num=mysqli_insert_id($conn);
+                            if(mysqli_affected_rows($conn)!=1){
+                            $message="error inserting record to our DB";
+                            }
+                  
+                            //echo "<script>alert('Dear $name, welcome to the boys sports')</script>";
+                        }
+                        ?>
                     <h2>Create Account</h2>
-                    <input type="text" placeholder="Name" id="name" autofocus required>
-                    <input type="email" placeholder="Email" id="email" required>
-                    <input type="password" placeholder="password" id="password" required>
-                    <input type="submit" value="SIGN UP" class="btn" required> 
+                    <input type="text" name="name" placeholder="Name" id="name" autofocus required>
+                    <input type="email" placeholder="Email" id="email" name="email" required>
+                    <input type="password" placeholder="password" id="password" name="password" required>
+                    <input type="submit" value="SIGN UP" class="btn" name="submit" required> 
                     </form>
                     <div>
                         <p>Already have an account?</p>
