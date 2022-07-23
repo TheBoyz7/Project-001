@@ -1,96 +1,4 @@
 * {
-<<<<<<< HEAD
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-nav{
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 1% 3%;
-background-color: white;
-}
-
-nav .nav-links{
-text-align: right;
-}
-
-nav .nav-links ul li{
-list-style: none;
-display: inline-block;
-position: relative;
-padding: 8px 12px;
-}
-
-nav .nav-links ul li a{
-text-decoration: none;
-color: #0057b8;
-font-size: 13px;
-transition: 0.5s;
-}
-
-nav .nav-links ul li a:hover{
-font-size: 15px;
-background: none;
-}
-
-.img img{
-height: 30px;
-width: 40px;
-}
-
-nav .fa{
-display: none;
-}
-
-@media(max-width: 720px){
-.row{
-    flex-direction: column;
-}
-
-nav .nav-links ul li{
-    display: block;
-    padding: 10px 20px;
-    margin-right: 20px;
-}
-
-.nav-links{
-    position: fixed;
-    background-color: white;
-    top: 0;
-    height: 100vh;
-    width: 200px;
-    right: -200px;
-    text-align: center;
-    z-index: 99;
-    transition: 1s;
-}
-
-nav .fa{
-    display: block;
-    color: #0057b8;
-    margin: 5px;
-    padding: 10px;
-    cursor: pointer;
-}
-}
-
-
-.features{
-width: 80%;
-padding-top: 80px;
-margin: auto;
-text-align: center; 
-}
-
-.features h1{
-  font-size: 32px;
-}
-
-.row{
-=======
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -101,7 +9,8 @@ text-align: center;
   justify-content: space-between;
   align-items: center;
   padding: 1% 3%;
-  background-color: #6cabdd;
+  background-color: white
+;
   }
   
   nav .nav-links{
@@ -117,8 +26,8 @@ text-align: center;
   
   nav .nav-links ul li a{
   text-decoration: none;
-  color: #1c2c5b;
-  font-size: 10px;
+  color: #005DAA;
+  font-size: 8px;
   transition: 0.5s;
   }
   
@@ -149,7 +58,8 @@ text-align: center;
   
   .nav-links{
       position: fixed;
-      background-color: #6cabdd;
+      background-color: #005DAA
+;
       top: 0;
       height: 100vh;
       width: 200px;
@@ -178,7 +88,6 @@ text-align: center;
   }
   
   .row{
->>>>>>> 78749cddc95815970a5a9f956b6b6aefda3e8ed1
   display: flex;
   justify-content: space-between;
   margin-top: 5%;
