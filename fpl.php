@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="images/stats.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
-<body style="background-image: url(./images/fpldaily/<?php echo date("w")?>.JPG);">
+<body style="background-image: url(./images/fpldaily/<?php echo date("d")?>.JPG);">
     <header>
         <nav>
             <div class="nav-links" id="nav">

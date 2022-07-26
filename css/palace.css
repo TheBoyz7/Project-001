@@ -87,7 +87,7 @@ nav .fa{
 
 .row{
   display: flex;
-  justify-content: space-between;
+  justify-content: sp;
   margin-top: 5%;
   flex-wrap: wrap;
 }
