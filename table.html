@@ -4,20 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your account</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>League Table</title>
 </head>
 <body>
-    <br>
-    <br>
-    <a href="dashboard.html">Dashboard</a>
+    <nav>
+        <div class="img">
+            <img src="./images/premierLeagueDark.jpg" alt="">
+        </div>
+        <div class="nav-links" id="nav">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="dashboard.html">HOME</a></li>
+                <li><a href="fpl.php">FANTASY PREMIER LEAGUE</a></li>
+                <li><a href="signin.html">SIGN IN</a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+   </header>
+   <div class="flex-row">
+    <div id="scoreaxis-widget-c591b" style="border-width:1px;border-color:rgba(0, 0, 0, 0.15);border-style:solid;border-radius:8px;padding:10px;background:rgb(255, 255, 255);width:100%;background-color:#000000" data-reactroot=""><iframe id="Iframe" src="https://www.scoreaxis.com/widget/standings-widget/8?textColor=%23ffffff&amp;bodyBackground=%23000000&amp;borderColor=%23132257&amp;widgetHomeAwayTabs=0&amp;removeBorders=1&amp;autoHeight=0&amp;inst=c591b" style="width:100%;height:550px;border:none;transition:all 300ms ease"></iframe><script>window.addEventListener("DOMContentLoaded",event=>{window.addEventListener("message",event=>{if(event.data.appHeight&&"c591b"==event.data.inst){let container=document.querySelector("#scoreaxis-widget-c591b iframe");container&&(container.style.height=parseInt(event.data.appHeight)+"px")}},!1)});</script></div>
 
-    <button id="btn">show table</button>
-
-    <div id="table">
-
+   </div>
+    
+    
+  <footer>
+    <h3>About us</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. olore dolorum similique quam, <br> distinctio aut dolorem quasi alias aspernatur quod soluta. <br> Sit quos quod pariatur id nulla neque, dignissimos consectetur.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
     </div>
-    <script src="./script/script'.js"></script>
+   </footer>
+ 
+   <script>
+    //for menu slide
+    var navLinks = document.getElementById("nav")
+  
+    function showMenu(){
+    navLinks.style.right = "0"
+    }
+    
+    function hideMenu(){
+    navLinks.style.right = "-200px"
+    }
+  ////end of code for menu slide
+  
+</script>  
+ 
 </body>
 </html>
+

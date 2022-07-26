@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantsy Premier League</title>
-    <link rel="stylesheet" href="css/fpl.css">
-    <link rel="shortcut icon" href="images/pl.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/fpl2.css">
+    <link rel="shortcut icon" href="images/stats.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body style="background-image: url(./images/fpldaily/<?php echo date("w")?>.JPG);">
     <header>
         <nav>
             <div class="nav-links" id="nav">
@@ -21,14 +21,22 @@
                     <li><a href="mancity.html">MAN CITY</a></li>
                     <li><a href="Spurs.html">SPURS</a></li>
                     <li><a href="liverpool.html">LIVERPOOL</a></li>
-                    <li class="dropdown"><a class="dropbtn" href=""  >OTHER CLUBS <i class="fa fa-arrow-right"></i></a>
-                        <ul class="dropdown-content" data-bs-toggle="active">
-                            <li><a href="westham.html">West ham</a></li>
-                            <li><a href="newcastle.html">Newcastle</a></li>
-                            <li><a href="">Brighton</a></li>
-                            <li><a href="bournemouth.html">BOURNEMOUTH</a></li>
-                            <li><a href="brentford.html">BRENTFORD</a></li>
-                        </ul>
+                    <li><a href="westham.html">WESTHAM</a></li>
+                    <li><a href="NEWCASTLE.html">NEWCASTLE</a></li>
+                    <li><a href="NOTTINGHAM.html">NOTTINGHAM</a></li>
+                    <li><a href="fulham.html">FULHAM</a></li>
+                    <li><a href="bournemouth.html">BOURNEMOUTH</a></li>
+                    <li><a href="brentford.html">BRENTFORD</a></li>
+                    <li><a href="palace.html">CRYSTAL PALACE</a></li>
+                    <li><a href="everton.html">EVERTON</a></li>
+                    <li><a href="leciester.html">LEICESTER CITY</a></li>
+                    <li><a href="southampton.html">SOUTHAMPTON</a></li>
+                    <li><a href="astonvilla.html">ASTON VILLA</a></li>
+                    <li><a href="wolves.html">WOLVES</a></li>
+                    <li><a href="brighton.html">BRIGHTON</a></li>
+                    <li><a href="leeds.html">LEEDS UNITED</a></li>
+                    <li><a href="dashboard.html">DASHBOARD</a></li>
+                </ul>
                     </li>
                 </ul>
             </div>
@@ -37,7 +45,7 @@
         <div class="text-box">
             <h2>Welcome</h2>
             <p>Login Here</p>
-            <a href="">Log in</a>
+            <a href="https://fantasy.premierleague.com/"><input type="button" value="Login" id="btn"></a>
         </div>
     </header>
     <script>

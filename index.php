@@ -14,9 +14,9 @@
 </head>
 <body>
     <!-- PRELOADER -->
-<div id="preloader">
+<!-- <div id="preloader">
     <div class="loader_line"></div>
-</div>
+</div> -->
 <!-- /PRELOADER -->
         <header>
             <br>
@@ -35,30 +35,28 @@
                     <!-- <span class="dot1"></span>
                     <span class="dot2"></span>
                     <span class="dot3"></span> -->
-                    <form action="dashboard.html" method="post" >
+                    <form method="post" action="dashboard.html">
                         <?php 
                         include("dbcon.php");
                         error_reporting(E_ALL);
                         if(isset($_REQUEST['submit'])){
-                            $name=$_REQUEST['name'];
+                            $name=$_REQUEST['names'];
                             $email=$_REQUEST['email'];
-                            $password=$_REQUEST['password'];
+                            $password=$_REQUEST['pass'];
 
-                            $sql="INSERT INTO table001(name, email, password) VALUE('$name','$email','$password')";
+                            $sql="INSERT INTO signup(names, email, pass) VALUE('$name','$email','$password')";
                             mysqli_query($conn,$sql)or die(mysqli_error($conn));
                             $num=mysqli_insert_id($conn);
                             if(mysqli_affected_rows($conn)!=1){
                             $message="error inserting record to our DB";
-                            }
-                  
-                            //echo "<script>alert('Dear $name, welcome to the boys sports')</script>";
+                            } 
                         }
                         ?>
                     <h2>Create Account</h2>
-                    <input type="text" name="name" placeholder="Name" id="name" autofocus required>
+                    <input type="text" name="names" placeholder="Name" id="name" autofocus required>
                     <input type="email" placeholder="Email" id="email" name="email" required>
-                    <input type="password" placeholder="password" id="password" name="password" required>
-                    <input type="submit" value="SIGN UP" class="btn" name="submit" required> 
+                    <input type="password" placeholder="pass" id="password" name="pass" required>
+                    <input type="submit" value="SIGN UP"  class="btn" name="submit" required> 
                     </form>
                     <div>
                         <p>Already have an account?</p>
@@ -73,7 +71,7 @@
 <!-- Scripts -->
 
       <!-- signup scripts -->
-<!-- <script>
+<script>
          var f= document.querySelector('#signup');
          f.addEventListener('submit', e =>{e.preventDefault()})
 
@@ -104,8 +102,8 @@
     }) 
     .catch((error) =>{
         showError ('Sign-in Failed');
-    }) -->
-<!-- </script> -->
+    }) 
+</script> 
 
 
 
