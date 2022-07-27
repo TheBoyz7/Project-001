@@ -45,7 +45,7 @@
         <div class="text-box">
             <h2>Welcome</h2>
             <p>Login Here</p>
-            <a href="https://fantasy.premierleague.com/"><input type="button" value="Login" id="btn"></a>
+            <a href="https://fantasy.premierleague.com/" target="blank"><input type="button" value="Login" id="btn"></a>
         </div>
     </header>
     <script>
