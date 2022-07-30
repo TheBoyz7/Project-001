@@ -1,3 +1,11 @@
+<?php
+  include('session.php');
+  include('dbcon.php');
+  $id = 1;
+  $sql="SELECT * FROM signup WHERE id='$id'";
+  $result=mysqli_query($conn,$sql)or die(mysqli_error($conn));
+  $rows=mysqli_fetch_array($result);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +33,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- end of Meta tag -->
         <!-- title tag -->
-    <title>Dashboard</title>
+    <title> <?php echo $session_name ?> || Dashboard</title>
     <!-- favicon tag -->
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <!-- css -->
@@ -68,14 +76,14 @@
                     <li><a href="wolves.html">WOLVES</a></li>
                     <li><a href="brighton.html">BRIGHTON</a></li>
                     <li><a href="leeds.html">LEEDS UNITED</a></li>
-                <li><a href="dashboard.html">DASHBOARD</a></li>
+                <li><a href="dashboard.php">DASHBOARD</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
    </header>
    <section class="features">
-    <h1>What would you be checking today?</h1>
+    <h1>Hey There <?php echo $session_name ?> would you be checking today?</h1>
     <div class="row">
         <div class="features-col">
             <a href="fpl.php"><img src="./images/fpl.jpg" alt=""></a>

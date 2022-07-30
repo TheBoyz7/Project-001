@@ -35,7 +35,7 @@
                     <li><a href="wolves.html">WOLVES</a></li>
                     <li><a href="brighton.html">BRIGHTON</a></li>
                     <li><a href="leeds.html">LEEDS UNITED</a></li>
-                    <li><a href="dashboard.html">DASHBOARD</a></li>
+                    <li><a href="dashboard.php">DASHBOARD</a></li>
                 </ul>
                     </li>
                 </ul>
