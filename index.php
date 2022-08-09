@@ -14,9 +14,9 @@
 </head>
 <body>
     <!-- PRELOADER -->
-<!-- <div id="preloader">
+<div id="preloader">
     <div class="loader_line"></div>
-</div> -->
+</div>
 <!-- /PRELOADER -->
         <header>
             <br>
